@@ -6,6 +6,6 @@ RUN apt-get update \
    && pip install broadlink configparser netaddr pycryptodome
 
 WORKDIR broadlink-http-rest
-RUM rm ./settings.ini
+RUN rm settings.ini
 
 CMD [ "python", "./server.py" ]
